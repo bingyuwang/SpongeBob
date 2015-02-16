@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SampleAssets/2D/Sprites/Scripts/PlatformerCharacter2D.cs">
+    <Files>
+      <File FileName="Assets/SampleAssets/2D/Sprites/Scripts/PlatformerCharacter2D.cs" Line="67" Column="19" />
+      <File FileName="Assets/SampleAssets/2D/Sprites/Scripts/TypeMode.cs" Line="7" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

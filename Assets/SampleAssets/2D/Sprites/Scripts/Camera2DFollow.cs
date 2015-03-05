@@ -22,11 +22,12 @@ namespace UnitySampleAssets._2D
         {
 			GameManager.GameStart += GameStart;
 			GameManager.GameOver += GameOver;
-
+			if (target == null)
+				target = GameObject.Find ("Player").transform;
 			lastTargetPosition = target.position;
 			offsetZ = (transform.position - target.position).z;
 			transform.parent = null;
-			this.enabled = false;
+			//DontDestroyOnLoad (this);
         }
 
 		private void GameStart(){
@@ -35,6 +36,9 @@ namespace UnitySampleAssets._2D
 			lastTargetPosition = target.position;
 			offsetZ = (transform.position - target.position).z;
 			transform.parent = null;
+			if (target == null)
+				target = GameObject.Find ("Player").transform;
+
 		}
 
 		private void GameOver(){
@@ -43,7 +47,8 @@ namespace UnitySampleAssets._2D
         // Update is called once per frame
         private void Update()
         {
-
+			if (target == null)
+				target = GameObject.Find ("Player").transform;
             // only update lookahead pos if accelerating or changed direction
             float xMoveDelta = (target.position - lastTargetPosition).x;
 
@@ -63,6 +68,8 @@ namespace UnitySampleAssets._2D
 
             transform.position = newPos;
             lastTargetPosition = target.position;
+			this.transform.LookAt (lastTargetPosition);
         }
+
     }
 }

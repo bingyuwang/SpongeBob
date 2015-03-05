@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 namespace UnitySampleAssets._2D
 {
@@ -26,18 +27,28 @@ namespace UnitySampleAssets._2D
 		public Transform playerGraphics;
 		private Vector3 groundPosition;
 		public Sprite []spriteArray = new Sprite[2];
-		private bool modeChanged = false;
-		int mode = TypeMode.NORMALSPONGE; //this mode is to indicate the character type
-
+		public static int mode = TypeMode.NORMALSPONGE; //this mode is to indicate the character type
+		private bool DoubleJump = true;
+		private int HealthPoint = 20;
+		private bool whoisyourdaddy = false;
+		private long startime = 0;
+		private long oldTime  = 0;
+		private GameObject blood;
 		private void Start(){
 			GameManager.GameStart += GameStart;
 			GameManager.GameOver += GameOver;
+			blood = GameObject.Find ("Blood");
+			blood.SetActive (false);
 		}
 		private void GameStart(){
 			anim.enabled = true;;
 			this.enabled = true;
 			this.renderer.enabled = true;
 			this.rigidbody2D.isKinematic = false;
+			HealthPoint = 100;
+			setBlood (HealthPoint);
+			whoisyourdaddy = false;
+			openBlood ();
 
 		}
 		private void GameOver(){
@@ -45,10 +56,14 @@ namespace UnitySampleAssets._2D
 			this.enabled = false;
 			this.renderer.enabled = false;
 			this.rigidbody2D.isKinematic = true;
-			rigidbody2D.MovePosition(groundPosition);
+			rigidbody2D.MovePosition(new Vector2(0f,groundPosition.y+10f));
+			disableBlood ();
 		}
 		private void Awake()
         {
+//DontDestry
+			DontDestroyOnLoad (this.transform.gameObject);
+
             // Setting up references.
             groundCheck = transform.Find("GroundCheck");
             ceilingCheck = transform.Find("CeilingCheck");
@@ -60,29 +75,60 @@ namespace UnitySampleAssets._2D
 			}
         }
 
-		private void update() {
+		void OnCollisionEnter2D(Collision2D collisionInfo){
+			string collisionObject = collisionInfo.gameObject.ToString ().ToLower(); 
+			if (collisionObject.IndexOf("fruit")>=0) { //this is fruit that can change player
+				playerGraphics = transform.FindChild ("Graphics");
+				SpriteRenderer q =(SpriteRenderer) playerGraphics.GetComponent("SpriteRenderer");
+				if(collisionObject.IndexOf("big")>=0){
+					q.sprite =spriteArray[TypeMode.MUSCLESPONGE];
+					mode = TypeMode.MUSCLESPONGE;
+				}else if(collisionObject.IndexOf("small")>=0){
+					q.sprite = spriteArray[TypeMode.NORMALSPONGE];
+					mode = TypeMode.NORMALSPONGE;
+				}else if(collisionObject.IndexOf("gun")>=0){
+					q.sprite = spriteArray[TypeMode.GUNSPONGE];
+					mode = TypeMode.GUNSPONGE;
+				}
+				collisionInfo.gameObject.SetActive(false); //make the fruit disable
+			}else if(collisionObject.StartsWith("enemy")){
+				float collisionUpperBound = collisionInfo.transform.position.x-collisionInfo.transform.localScale.x/2;
+				float collisionDownBound  = collisionInfo.transform.position.x+collisionInfo.transform.localScale.x/2;
+				float collisionSkyBound   = collisionInfo.transform.position.y-0.61f;
+				if(!(this.transform.position.x>collisionUpperBound&&this.transform.position.x<collisionDownBound&&this.transform.position.y>collisionSkyBound)){
+					HealthPoint-=TypeMode.OCTOPUS;
+					this.rigidbody2D.isKinematic = true;
+					this.collider2D.enabled = false;
+					if(HealthPoint<=0){
+						GameManager.TriggerGameOver();	
+					}
+					whoisyourdaddy = true; //I can be beaten
+					startime  =long.Parse(GetTimeStamp(false));
+					oldTime   = startime;
+				}
+			}
+		}
+		void blink(){
 			playerGraphics = transform.FindChild ("Graphics");
 			SpriteRenderer q =(SpriteRenderer) playerGraphics.GetComponent("SpriteRenderer");
-			if (Input.GetKeyDown (KeyCode.Q)) {
-				mode = 1-mode;
-				modeChanged = true;
-			}
-			if (mode==TypeMode.NORMALSPONGE && modeChanged) {
-				q.sprite = spriteArray [TypeMode.NORMALSPONGE];
-			} else if(mode==TypeMode.MUSCLESPONGE&&modeChanged){
-				q.sprite =spriteArray[TypeMode.MUSCLESPONGE];
-			}
-			modeChanged = false;
+			q.enabled = !q.enabled;
 		}
-
         private void FixedUpdate()
         {
-			update ();
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             grounded = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround);
+
             anim.SetBool("Ground", grounded);
 			if (grounded) {
 				groundPosition = transform.localPosition;
+				DoubleJump = true;
+			} else if (!grounded) {
+				this.collider2D.enabled = true;
+				this.rigidbody2D.isKinematic = false;
+				whoisyourdaddy = false;
+				playerGraphics = transform.FindChild ("Graphics");
+				SpriteRenderer q =(SpriteRenderer) playerGraphics.GetComponent("SpriteRenderer");
+				q.enabled = true;
 			}
             // Set the vertical animation
             anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
@@ -90,7 +136,23 @@ namespace UnitySampleAssets._2D
         	if (y < GameOverY) {
 				GameManager.TriggerGameOver ();
 			}
+			if (whoisyourdaddy) {
+				if(long.Parse(GetTimeStamp(false))-startime>100){
+					blink();
+					startime = long.Parse(GetTimeStamp(false));
+				}
+				if(long.Parse(GetTimeStamp(false))-oldTime>=3000){
+					whoisyourdaddy = false;
+					playerGraphics = transform.FindChild ("Graphics");
+					SpriteRenderer q =(SpriteRenderer) playerGraphics.GetComponent("SpriteRenderer");
+					q.enabled =true;
+					this.collider2D.enabled = true;
+					this.rigidbody2D.isKinematic = false;
+				}
+			}
+			setBlood(HealthPoint);
 			anim.SetInteger("Mode", mode);
+		
 		}
         public void Move(float move, bool crouch, bool jump)
         {
@@ -129,17 +191,17 @@ namespace UnitySampleAssets._2D
                     Flip();
             }
             // If the player should jump...
-            if (grounded && jump && anim.GetBool("Ground"))
-            {
-                // Add a vertical force to the player.
-                grounded = false;
-                anim.SetBool("Ground", false);
-                rigidbody2D.AddForce(new Vector2(0f, jumpForce));
-            }
+            if (grounded && jump && anim.GetBool ("Ground")) {
+				// Add a vertical force to the player.
+				grounded = false;
+				anim.SetBool ("Ground", false);
+				rigidbody2D.AddForce (new Vector2 (0f, jumpForce));
+			} else if (DoubleJump && jump&&mode==TypeMode.MUSCLESPONGE) {
+				DoubleJump = false;	
+				rigidbody2D.AddForce (new Vector2 (0f, jumpForce));
+			}
 
         }
-
-
         private void Flip()
         {
             // Switch the way the player is labelled as facing.
@@ -150,5 +212,26 @@ namespace UnitySampleAssets._2D
             theScale.x *= -1;
             playerGraphics.localScale = theScale;
         }
+		public static string GetTimeStamp(bool bflag = true)  
+		{  
+			TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);  
+			string ret = string.Empty;  
+			if (bflag)  
+				ret = Convert.ToInt64(ts.TotalSeconds).ToString();  
+			else  
+				ret = Convert.ToInt64(ts.TotalMilliseconds).ToString();  
+			return ret;  
+		}
+		private void setBlood(int b){
+			float startPos = 0f-(b)/2;
+			if(blood!=null)
+				blood.guiTexture.pixelInset = new Rect(startPos,0,b,5f);
+		}
+		private void openBlood(){
+			blood.SetActive (true);
+		}
+		private void disableBlood(){
+			blood.SetActive (false);
+		}
     }
 }

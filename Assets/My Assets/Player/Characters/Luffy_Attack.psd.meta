@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 6383c84cf710b43f5b2f01bca593ba51
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Luffy_Attack_0
+    21300002: Luffy_Attack_1
+    21300004: Luffy_Attack_2
+    21300006: Luffy_Attack_3
+    21300008: Luffy_Attack_4
+    21300010: Luffy_Attack_5
+    21300012: Luffy_Attack_6
+    21300014: Luffy_Attack_7
+    21300016: Luffy_Attack_8
+    21300018: Luffy_Attack_9
+    21300020: Luffy_Attack_10
+    21300022: Luffy_Attack_11
+    21300024: Luffy_Attack_12
+    21300026: Luffy_Attack_13
+    21300028: Luffy_Attack_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 20
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Luffy_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 975
+        width: 163
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 964
+        width: 140
+        height: 206
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 952
+        width: 239
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 707
+        width: 347
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 690
+        width: 396
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 435
+        width: 368
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 437
+        width: 234
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 103
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 198
+        width: 208
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 221
+        width: 171
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 236
+        width: 158
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 250
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 159
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 0
+        width: 163
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

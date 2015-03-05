@@ -6,6 +6,7 @@ public class GUIManager : MonoBehaviour {
 	public GUIText gameTitle, gameOverText,GameInstruction;
 	// Use this for initialization
 	void Start () {
+
 		gameOverText.enabled = false;
 		GameManager.GameStart += GameStart;
 		GameManager.GameOver += GameOver;
@@ -14,7 +15,8 @@ public class GUIManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			GameManager.TriggerGameStart();			
+			if(!GameManager.isStart)
+				GameManager.TriggerGameStart();			
 		}
 	}
 	void GameStart(){

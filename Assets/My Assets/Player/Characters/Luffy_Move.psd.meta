@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 7343e4140a4f940298beb1f082e3e0a5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Luffy_Move_0
+    21300002: Luffy_Move_1
+    21300004: Luffy_Move_2
+    21300006: Luffy_Move_3
+    21300008: Luffy_Move_4
+    21300010: Luffy_Move_5
+    21300012: Luffy_Move_6
+    21300014: Luffy_Move_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 125
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Luffy_Move_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 562
+        width: 186
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Move_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 524
+        width: 181
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Move_2
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 538
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Move_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 291
+        width: 192
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Move_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 280
+        width: 154
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Move_5
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 269
+        width: 198
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Move_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 224
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Luffy_Move_7
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 13
+        width: 214
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

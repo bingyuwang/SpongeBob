@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: 954d54a9a162d4c67b2db8675b469803
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EnemyOct_0
+    21300002: EnemyOct_1
+    21300004: EnemyOct_1
+    21300006: EnemyOct_3
+    21300008: EnemyOct_4
+    21300010: EnemyOct_5
+    21300012: EnemyOct_6
+    21300014: EnemyOct_7
+    21300016: EnemyOct_2
+    21300018: EnemyOct_9
+    21300020: EnemyOct_10
+    21300022: EnemyOct_3
+    21300024: EnemyOct_12
+    21300026: EnemyOct_13
+    21300028: EnemyOct_14
+    21300030: EnemyOct_15
+    21300032: EnemyOct_16
+    21300034: EnemyOct_17
+    21300036: EnemyOct_18
+    21300038: EnemyOct_19
+    21300040: EnemyOct_20
+    21300042: EnemyOct_21
+    21300044: EnemyOct_22
+    21300046: EnemyOct_23
+    21300048: EnemyOct_24
+    21300050: EnemyOct_25
+    21300052: EnemyOct_26
+    21300054: EnemyOct_27
+    21300056: EnemyOct_28
+    21300058: EnemyOct_29
+    21300060: EnemyOct_30
+    21300062: EnemyOct_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: EnemyOct_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 237
+        width: 71
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 228
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 241
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_6
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 252
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 230
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 227
+        width: 78
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_9
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 236
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 247
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 220
+        width: 82
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_12
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 224
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 250
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 144
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 147
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_16
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 120
+        width: 30
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_17
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 120
+        width: 30
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_18
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 120
+        width: 30
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_19
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 133
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 120
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 120
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_22
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 122
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_23
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 122
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_24
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 128
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 122
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: NaN, y: NaN}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_26
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 14
+        width: 30
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_27
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 14
+        width: 30
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_28
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 20
+        width: 30
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_29
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 31
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyOct_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
